@@ -10,8 +10,7 @@ const clock = ()=>{
 
 
     const diff = (end - now)/1000
-    if (diff<0) return
-
+    if (diff<0) return    // this condition returno when the diff time is success or complette or timer is complete
     // Convert  into day 
     inputs[0].value = Math.floor(diff/3600/24)
     // Convert into hours
@@ -21,9 +20,8 @@ const clock = ()=>{
     //convert into secnd
     inputs[3].value = Math.floor(diff%60)
 }
-clock()
 
-
+// call the function in 1 sec 
 setInterval(()=>{
     clock()
 },1000)
