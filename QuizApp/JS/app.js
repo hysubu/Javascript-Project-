@@ -39,8 +39,6 @@ const question = [
     }
 ]
 
-
-
 let index = 0  // index 
 let answer ;   //  this a empty answer value 
 let total =question.length    // its length of question 

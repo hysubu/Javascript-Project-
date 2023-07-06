@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/custom.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+        <span id="pass-box">Testing</span>
+        <div class="row">
+            <div class="left">
+                Password Length
+            </div>
+            <div class="right">
+                <input type="number" id="total-char" max="30" min="2" value="8">
+            </div>
+        </div>
+        <div class="row">
+            <label class="upper-case">
+                <div class="left">
+                    Contains Uppercase
+                </div>
+            </label>
+            <div class="right">
+                <input type="checkbox" id="upper-case" max="30" min="2" >
+            </div>
+        </div>
+
+        <div class="row">
+            <label for="lower-case">
+                <div class="left">
+                    Containe Lowercase
+                </div>
+            </label>
+            <div class="right">
+                <input type="checkbox" id="lower-case" max="30" min="2"  >
+            </div>
+        </div>
+        <div class="row">
+            <label for="numbers">
+                <div class="left">
+                    Contain Number
+                </div>
+            </label>
+            <div class="right">
+                <input type="checkbox" id="number" max="30" min="2" >
+            </div>
+        </div>
+        <div class="row">
+            <label for="symbols">
+                <div class="left">
+                    Containe Symbols
+                </div>
+            </label>
+            <div class="right">
+                <input type="checkbox" id="symbols" max="30" min="2" >
+            </div>
+        </div>
+
+        
+
+        <div class="row">
+            <button id="btn" onclick=" generatepassword()">Generate</button>
+        </div>
+    </div>
+</div>
+
+    <script src="JS/app.js"></script>
+</body>
+
+</html>
