@@ -39,3 +39,17 @@ color: white;
 padding: 10px;
 border-radius: 6px;
 }
+#to-do-box li i{
+    position: absolute;
+    right: 290px;
+    top: 135px;
+}
+i{
+    /* position: /; */
+    right: 290px;
+    top: 135px;
+}
+.done{
+    background-color:darkgrey !important;
+    text-decoration: line-through;
+}
