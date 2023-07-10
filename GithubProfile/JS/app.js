@@ -1,5 +1,3 @@
-
-
 const APIURL = "https://api.github.com/users/"  // Github user Api url 
 const main = document.querySelector("#main");   // 
 
@@ -9,6 +7,13 @@ const getuser = async(username) => {
     console.log(respone)
     const data = await respone.json()
     console.log(data)
+    if(data == ""){
+        const card =  `<div class="card">
+        User Not Found
+        </div>`
+        
+    main.innerHTML = card
+    }else{
     const card = `
     <div class="card">
     <div class="image">
@@ -27,7 +32,9 @@ const getuser = async(username) => {
     </div>
 </div>
     `
-    main.innerHTML = card
+main.innerHTML = card
+}
+    
     getrepo(username)
 }
 
@@ -49,7 +56,8 @@ const getrepo  = async(username) => {
 
 //  here call the api and when the user submit the button pass as a getuser parameter 
 const formSubmit = () =>{
-    let inputValue=document.getElementById('search');
+    let inputValue=document.querySelector('#search');
+    console.log("ss", inputValue.value)
     if (inputValue.value != ""){
         getuser(inputValue.value)
     }
