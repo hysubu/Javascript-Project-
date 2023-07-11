@@ -10,7 +10,6 @@ const getmovie = async(url) => {
     const data  = await response.json()
     showmovie(data.results) 
 }
-
 // Show Movie >>>>>>>>>>>>>>>>>>>>>>>>------------
 const showmovie = (data)=>{
     movibox.innerHTML = ""
